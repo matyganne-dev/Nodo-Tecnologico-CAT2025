@@ -81,14 +81,45 @@
         </div>
     </section>
 
-    <!-- Sección destacados -->
-    <section>
-        <h2>Destacados del Día</h2>
-        <article>
-            <h3>Postre 1</h3>
-            <p>Descripción breve.</p>
-        </article>
-        <!-- agregar más artículos y quizas complementar con imagenes -->
+    <!-- Sección Destacados -->
+    <section class="py-12 bg-pink-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-pink-600 mb-10">
+                Destacados del Día
+            </h2>
+
+            <!-- Grid de artículos -->
+            <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+                <!-- Card 1 -->
+                <article class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition">
+                    <img src="/img/Brownie.avif" alt="Postre 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800">Brownie Eclipse</h3>
+                        <p class="text-gray-600 mt-2">Intensamente chocolateado con un corazón suave y bordes crujientes. Nuestro brownie premium se deride suavemente en tu paladar, creando una experiencia celestial con cada bocado. Perfecto equilibrio entre lo dulce y lo amargo.</p>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition">
+                    <img src="/img/Cheesecake.avif" alt="Postre 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800">Cheesecake Nube de Vainilla</h3>
+                        <p class="text-gray-600 mt-2">Cremosidad absoluta con una base de galleta crujiente. Elaborado con queso crema premium y vainilla de Madagascar, este cheesecake se deshace en tu boca como una suave nube. Textura sedosa que eleva los sentidos.</p>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition">
+                    <img src="/img/cupcakes.avif" alt="Postre 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800">Cupcakes Éxtasis Red Velvet</h3>
+                        <p class="text-gray-600 mt-2">Esponjosos cupcakes de terciopelo rojo coronados con un frosting de queso crema batido. La combinación perfecta entre lo ligeramente ácido y lo dulce, creando una explosión de sabores que te transportará al séptimo cielo.</p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
     </section>
 
     <!-- Sección muestra de catalogo -->
