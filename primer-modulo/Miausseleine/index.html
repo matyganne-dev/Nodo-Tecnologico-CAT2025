@@ -55,14 +55,30 @@
     </header>
 
     <!-- Sección Hero -->
-    <section id="hero" style="background-image: url('ruta/a/imagen-fondo-optimizada.jpg');">
-        <!-- Agregar, Imagen de fondo grande (optimízar con TinyPNG, squoosh, luego eliminar este comentario) -->
-        <h1>Miausseleine: Descubre el Arte de los Postres Elegantes</h1>
-        <p><strong>Descubre una experiencia única donde la alta repostería se une al encanto gatuno. Elaboramos postres
-                exquisitos con ingredientes premium, técnicas refinadas y un toque de diversión felina que deleitará
-                todos tus sentidos.</strong></p>
-        <a href="menu.html" class="cta-button">¡Descubre Nuestros Postres!</a>
-        <!-- boton menu, eliminar este comentario luego -->
+    <section id="hero"
+        class="relative bg-cover bg-center bg-no-repeat h-[70vh] md:h-[90vh] flex items-center justify-center text-center px-4"
+        style="background-image: url('/img/heroImg.jpg');">
+
+        <!-- Overlay oscuro para contraste -->
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+
+        <!-- Contenido principal hero-->
+        <div class="relative z-10 max-w-2xl space-y-6">
+            <h1 class="text-3xl md:text-5xl font-bold text-white">
+                Miausseleine: Descubre el Arte de los Postres Elegantes
+            </h1>
+            <p class="text-white text-base md:text-lg leading-relaxed">
+                <strong>
+                    Descubre una experiencia única donde la alta repostería se une al encanto gatuno.
+                    Elaboramos postres exquisitos con ingredientes premium, técnicas refinadas y un toque
+                    de diversión felina que deleitará todos tus sentidos.
+                </strong>
+            </p>
+            <a href="menu.html"
+                class="inline-block bg-pink-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-pink-700 transition">
+                ¡Descubre Nuestros Postres!
+            </a>
+        </div>
     </section>
 
     <!-- Sección destacados -->
