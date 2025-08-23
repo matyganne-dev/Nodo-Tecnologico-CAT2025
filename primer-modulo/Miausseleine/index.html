@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Miausseleine - Donde los postres encuentran su lado más felino. Descubre recetas adorables, postres con forma de gato y deliciosas magdalenas que harán ronronear tu paladar. ¡La pastelería gatuna que endulzará tu día!">
+    <meta name="keywords"
+        content="pastelería, postres artesanales, dulces, repostería creativa, postres con temática de gatos, pasteles personalizados, cupcakes, galletas decoradas, postres elegantes, magdalenas, tartas, postres para eventos, pastelería temática, postres clásicos, postres gourmet, pasteles de bodas, postres para cumpleaños, pastelería fina">
+    <meta name="author" content="Ganne Moreno Pablo Matias">
+    <title>Miausseleine</title>
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Añadir estilos Tailwind aquí -->
+</head>
+
+<body>
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto px-4 py-4">
+            <!-- Logo y hamburguesa -->
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="text-2xl font-bold text-pink-600">Miausseleine</a>
+                <!-- Checkbox para togglear menú -->
+                <input type="checkbox" id="menu-toggle" class="hidden peer">
+                <!-- Botón hamburguesa -->
+                <label for="menu-toggle" class="md:hidden cursor-pointer">
+                    <svg class="w-6 h-6 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </label>
+            </div>
+            <!-- Menú -->
+            <ul class="absolute left-0 right-0 bg-white mt-4 hidden peer-checked:block md:static md:flex md:flex-row md:items-center md:space-x-6 md:mt-0 md:ml-auto">
+                <li><a href="index.html" class="block py-2 px-4 text-gray-700 hover:bg-pink-100 hover:text-pink-600 transition">Home</a></li>
+                <li><a href="about.html" class="block py-2 px-4 text-gray-700 hover:bg-pink-100 hover:text-pink-600 transition">Acerca de</a></li>
+                <li><a href="menu.html" class="block py-2 px-4 text-gray-700 hover:bg-pink-100 hover:text-pink-600 transition">Menú</a></li>
+                <li><a href="gallery.html" class="block py-2 px-4 text-gray-700 hover:bg-pink-100 hover:text-pink-600 transition">Galería</a></li>
+                <li><a href="contact.html" class="block py-2 px-4 text-gray-700 hover:bg-pink-100 hover:text-pink-600 transition">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Hero -->
+    <section id="hero" style="background-image: url('ruta/a/imagen-fondo-optimizada.jpg');">
+        <!-- Agregar, Imagen de fondo grande (optimízar con TinyPNG, squoosh, luego eliminar este comentario) -->
+        <h1>Miausseleine: Descubre el Arte de los Postres Elegantes</h1>
+        <p><strong>Descubre una experiencia única donde la alta repostería se une al encanto gatuno. Elaboramos postres
+                exquisitos con ingredientes premium, técnicas refinadas y un toque de diversión felina que deleitará
+                todos tus sentidos.</strong></p>
+        <a href="menu.html" class="cta-button">¡Descubre Nuestros Postres!</a>
+        <!-- boton menu, eliminar este comentario luego -->
+    </section>
+
+    <!-- Sección destacados -->
+    <section>
+        <h2>Destacados del Día</h2>
+        <article>
+            <h3>Postre 1</h3>
+            <p>Descripción breve.</p>
+        </article>
+        <!-- agregar más artículos y quizas complementar con imagenes -->
+    </section>
+
+    <!-- Sección muestra de catalogo -->
+
+    <!-- Sección footer -->
+    <footer>
+        <p>&copy; 2025 Dulce Elegancia. Todos los derechos reservados.</p>
+        <ul>
+            <li><a href="https://twitter.com">Twitter</a></li>
+            <!-- Enlaces sociales -->
+        </ul>
+    </footer>
+</body>
+
+</html>
