@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explora nuestro menú de postres elegantes en Dulce Elegancia, con opciones artesanales y precios.">
+    <meta name="keywords" content="menú, postres, precios, dulces">
+    <meta name="author" content="Tu Nombre">
+    <title>Miausseleine - Menú</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- Sección Header/nav -->
+    <header class="relative overflow-hidden shadow-lg bg-gray-50">
+        <nav class="px-4 py-4 sm:flex sm:items-center sm:justify-between">
+            <!-- seccion logo y botton mobile -->
+            <div class="flex items-center justify-between">
+                <!-- Logo con enlace y texto -->
+                <a href="index.html" class="flex items-center space-x-2">
+                    <img src="/img/logoNav.png" class="h-12" alt="Logo de Miausseleine - Postres con estilo gatuno" />
+                    <span class="text-xl font-bold text-gray-800">Miausseleine</span>
+                </a>
+                <!-- boton hamburguesa -->
+                <button class="text-gray-700 sm:hidden" aria-label="Abrir menú">
+                    <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                        <path
+                            d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- seccion links del navbar-->
+            <ul class="flex-col items-start mt-3 gap-2 sm:flex sm:flex-row sm:mt-0 sm:gap-4" id="mobile-menu">
+                <li class="w-full sm:w-auto"><a
+                        class="block text-gray-600 hover:bg-gray-200 px-2 py-1 rounded hover:text-gray-900"
+                        href="index.html">Home</a></li>
+                <li class="w-full sm:w-auto"><a
+                        class="block text-gray-600 hover:bg-gray-200 px-2 py-1 rounded hover:text-gray-900 whitespace-nowrap"
+                        href="about.html">Nosotros</a></li>
+                <li class="w-full sm:w-auto"><a
+                        class="block text-gray-600 hover:bg-gray-200 px-2 py-1 rounded hover:text-gray-900"
+                        href="menu.html">Menú</a></li>
+                <li class="w-full sm:w-auto"><a
+                        class="block text-gray-600 hover:bg-gray-200 px-2 py-1 rounded hover:text-gray-900"
+                        href="gallery.html">Galería</a></li>
+                <li class="w-full sm:w-auto"><a
+                        class="block text-gray-600 hover:bg-gray-200 px-2 py-1 rounded hover:text-gray-900"
+                        href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="bg-white py-8 px-4">
+        <section class="max-w-5xl mx-auto">
+
+            <!-- Contenedor principal con flexbox -->
+            <div class="flex flex-wrap md:flex-nowrap gap-8">
+
+                <!-- Columna izquierda - Menú -->
+                <div class="w-full md:w-1/2">
+                    <div class="text-center mb-8">
+                        <h1 class="text-3xl font-bold text-gray-800 mb-2">MENÚ</h1>
+                        <div class="w-16 h-1 bg-rose-400 mx-auto"></div>
+                    </div>
+
+                    <div class="space-y-1">
+                        <div class="flex justify-between items-end py-3 border-b border-gray-100">
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-gray-800">Brownie Eclipse</h3>
+                                <p class="text-sm text-gray-600">Chocolate negro 70%, nueces tostadas, esencia de
+                                    vainilla</p>
+                            </div>
+                            <span class="font-bold text-rose-600 ml-4">$8.50</span>
+                        </div>
+
+                        <div class="flex justify-between items-end py-3 border-b border-gray-100">
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-gray-800">Cheesecake Nube</h3>
+                                <p class="text-sm text-gray-600">Queso crema, vainilla de Madagascar, base de galleta
+                                </p>
+                            </div>
+                            <span class="font-bold text-rose-600 ml-4">$9.80</span>
+                        </div>
+
+                        <div class="flex justify-between items-end py-3 border-b border-gray-100">
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-gray-800">Brownie Eclipse</h3>
+                                <p class="text-sm text-gray-600">Chocolate negro 70%, nueces tostadas, esencia de
+                                    vainilla</p>
+                            </div>
+                            <span class="font-bold text-rose-600 ml-4">$8.50</span>
+                        </div>
+
+                        <div class="flex justify-between items-end py-3 border-b border-gray-100">
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-gray-800">Cheesecake Nube</h3>
+                                <p class="text-sm text-gray-600">Queso crema, vainilla de Madagascar, base de galleta
+                                </p>
+                            </div>
+                            <span class="font-bold text-rose-600 ml-4">$9.80</span>
+                        </div>
+
+                        <div class="flex justify-between items-end py-3 border-b border-gray-100">
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-gray-800">Brownie Eclipse</h3>
+                                <p class="text-sm text-gray-600">Chocolate negro 70%, nueces tostadas, esencia de
+                                    vainilla</p>
+                            </div>
+                            <span class="font-bold text-rose-600 ml-4">$8.50</span>
+                        </div>
+
+                        <div class="flex justify-between items-end py-3 border-b border-gray-100">
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-gray-800">Cheesecake Nube</h3>
+                                <p class="text-sm text-gray-600">Queso crema, vainilla de Madagascar, base de galleta
+                                </p>
+                            </div>
+                            <span class="font-bold text-rose-600 ml-4">$9.80</span>
+                        </div>
+
+                        <div class="flex justify-between items-end py-3 border-b border-gray-100">
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-gray-800">Brownie Eclipse</h3>
+                                <p class="text-sm text-gray-600">Chocolate negro 70%, nueces tostadas, esencia de
+                                    vainilla</p>
+                            </div>
+                            <span class="font-bold text-rose-600 ml-4">$8.50</span>
+                        </div>
+
+                        <div class="flex justify-between items-end py-3 border-b border-gray-100">
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-gray-800">Cheesecake Nube</h3>
+                                <p class="text-sm text-gray-600">Queso crema, vainilla de Madagascar, base de galleta
+                                </p>
+                            </div>
+                            <span class="font-bold text-rose-600 ml-4">$9.80</span>
+                        </div>
+
+                        <div class="flex justify-between items-end py-3 border-b border-gray-100">
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-gray-800">Brownie Eclipse</h3>
+                                <p class="text-sm text-gray-600">Chocolate negro 70%, nueces tostadas, esencia de
+                                    vainilla</p>
+                            </div>
+                            <span class="font-bold text-rose-600 ml-4">$8.50</span>
+                        </div>
+
+                        <div class="flex justify-between items-end py-3 border-b border-gray-100">
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-gray-800">Cheesecake Nube</h3>
+                                <p class="text-sm text-gray-600">Queso crema, vainilla de Madagascar, base de galleta
+                                </p>
+                            </div>
+                            <span class="font-bold text-rose-600 ml-4">$9.80</span>
+                        </div>
+
+                        <div class="flex justify-between items-end py-3 border-b border-gray-100">
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-gray-800">Brownie Eclipse</h3>
+                                <p class="text-sm text-gray-600">Chocolate negro 70%, nueces tostadas, esencia de
+                                    vainilla</p>
+                            </div>
+                            <span class="font-bold text-rose-600 ml-4">$8.50</span>
+                        </div>
+
+                        <div class="flex justify-between items-end py-3 border-b border-gray-100">
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-gray-800">Cheesecake Nube</h3>
+                                <p class="text-sm text-gray-600">Queso crema, vainilla de Madagascar, base de galleta
+                                </p>
+                            </div>
+                            <span class="font-bold text-rose-600 ml-4">$9.80</span>
+                        </div>
+
+                        <div class="flex justify-between items-end py-3 border-b border-gray-100">
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-gray-800">Brownie Eclipse</h3>
+                                <p class="text-sm text-gray-600">Chocolate negro 70%, nueces tostadas, esencia de
+                                    vainilla</p>
+                            </div>
+                            <span class="font-bold text-rose-600 ml-4">$8.50</span>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 relative">
+                        <!-- Cintas decorativas superiores -->
+                        <div class="absolute -top-2 -left-2 w-16 h-8 bg-pink-400 rotate-[-20deg] rounded-sm z-10"></div>
+                        <div class="absolute -top-2 -right-2 w-16 h-8 bg-pink-400 rotate-[20deg] rounded-sm z-10"></div>
+
+                        <!-- Imagen 1 -->
+                        <div
+                            class="relative transform rotate-[-3deg] hover:rotate-0 transition-transform duration-300 w-1/3">
+                            <div class="bg-gray-200 h-40 rounded-lg flex items-center justify-center">
+                                <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=400"
+                                    alt="Postre Brownie" class="w-full h-40 object-cover rounded-lg shadow-md">
+                            </div>
+                            <!-- Cinta más pequeña -->
+                            <div class="absolute -top-2 -right-2 w-6 h-6 bg-pink-400 rotate-45 rounded-sm"></div>
+                        </div>
+
+                        <!-- Imagen 2 -->
+                        <div
+                            class="relative transform rotate-[2deg] hover:rotate-0 transition-transform duration-300 w-1/3">
+                            <div class="bg-gray-200 h-40 rounded-lg flex items-center justify-center">
+                                <img src="https://images.unsplash.com/photo-1519869325930-281384150729?w=400"
+                                    alt="Postre Brownie" class="w-full h-40 object-cover rounded-lg shadow-md">
+                            </div>
+                            <!-- Cinta más pequeña -->
+                            <div class="absolute -bottom-2 -left-2 w-6 h-6 bg-pink-400 rotate-45 rounded-sm"></div>
+                        </div>
+
+                        <!-- Imagen 3 -->
+                        <div
+                            class="relative transform rotate-[-2deg] hover:rotate-0 transition-transform duration-300 w-1/3">
+                            <div class="bg-gray-200 h-40 rounded-lg flex items-center justify-center">
+                                <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400"
+                                    alt="Postre Brownie" class="w-full h-40 object-cover rounded-lg shadow-md">
+                            </div>
+                            <!-- Cinta más pequeña -->
+                            <div class="absolute -top-2 -left-2 w-6 h-6 bg-pink-400 rotate-45 rounded-sm"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna derecha - Imágenes -->
+                <div class="w-full md:w-1/2">
+                    <div class="flex gap-4 relative">
+                        <!-- Cintas decorativas superiores -->
+                        <div class="absolute -top-2 -left-2 w-16 h-8 bg-pink-400 rotate-[-20deg] rounded-sm z-10"></div>
+                        <div class="absolute -top-2 -right-2 w-16 h-8 bg-pink-400 rotate-[20deg] rounded-sm z-10"></div>
+
+                        <!-- Imagen 1 -->
+                        <div
+                            class="relative transform rotate-[-3deg] hover:rotate-0 transition-transform duration-300 w-1/3">
+                            <div class="bg-gray-200 h-40 rounded-lg flex items-center justify-center">
+                                <img src="https://images.unsplash.com/photo-1551106652-a5bcf4b29ab6?w=400"
+                                    alt="Postre Brownie" class="w-full h-40 object-cover rounded-lg shadow-md">
+                            </div>
+                            <!-- Cinta más pequeña -->
+                            <div class="absolute -top-2 -right-2 w-6 h-6 bg-pink-400 rotate-45 rounded-sm"></div>
+                        </div>
+
+                        <!-- Imagen 2 -->
+                        <div
+                            class="relative transform rotate-[2deg] hover:rotate-0 transition-transform duration-300 w-1/3">
+                            <div class="bg-gray-200 h-40 rounded-lg flex items-center justify-center">
+                                <img src="https://images.unsplash.com/photo-1558326567-98ae2405596b?w=400"
+                                    alt="Postre Brownie" class="w-full h-40 object-cover rounded-lg shadow-md">
+                            </div>
+                            <!-- Cinta más pequeña -->
+                            <div class="absolute -bottom-2 -left-2 w-6 h-6 bg-pink-400 rotate-45 rounded-sm"></div>
+                        </div>
+
+                        <!-- Imagen 3 -->
+                        <div
+                            class="relative transform rotate-[-2deg] hover:rotate-0 transition-transform duration-300 w-1/3">
+                            <div class="bg-gray-200 h-40 rounded-lg flex items-center justify-center">
+                                <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400"
+                                    alt="Postre Brownie" class="w-full h-40 object-cover rounded-lg shadow-md">
+                            </div>
+                            <!-- Cinta más pequeña -->
+                            <div class="absolute -top-2 -left-2 w-6 h-6 bg-pink-400 rotate-45 rounded-sm"></div>
+                        </div>
+                    </div>
+
+                    <!-- Lista de postres -->
+                    <div class="space-y-1">
+                        <div class="flex justify-between items-end py-3 border-b border-gray-100">
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-gray-800">Brownie Eclipse</h3>
+                                <p class="text-sm text-gray-600">Chocolate negro 70%, nueces tostadas, esencia de
+                                    vainilla</p>
+                            </div>
+                            <span class="font-bold text-rose-600 ml-4">$8.50</span>
+                        </div>
+
+                        <div class="flex justify-between items-end py-3 border-b border-gray-100">
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-gray-800">Cheesecake Nube</h3>
+                                <p class="text-sm text-gray-600">Queso crema, vainilla de Madagascar, base de galleta
+                                </p>
+                            </div>
+                            <span class="font-bold text-rose-600 ml-4">$9.80</span>
+                        </div>
+
+                        <div class="flex justify-between items-end py-3 border-b border-gray-100">
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-gray-800">Brownie Eclipse</h3>
+                                <p class="text-sm text-gray-600">Chocolate negro 70%, nueces tostadas, esencia de
+                                    vainilla</p>
+                            </div>
+                            <span class="font-bold text-rose-600 ml-4">$8.50</span>
+                        </div>
+
+                        <div class="flex justify-between items-end py-3 border-b border-gray-100">
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-gray-800">Cheesecake Nube</h3>
+                                <p class="text-sm text-gray-600">Queso crema, vainilla de Madagascar, base de galleta
+                                </p>
+                            </div>
+                            <span class="font-bold text-rose-600 ml-4">$9.80</span>
+                        </div>
+
+                        <div class="flex justify-between items-end py-3 border-b border-gray-100">
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-gray-800">Brownie Eclipse</h3>
+                                <p class="text-sm text-gray-600">Chocolate negro 70%, nueces tostadas, esencia de
+                                    vainilla</p>
+                            </div>
+                            <span class="font-bold text-rose-600 ml-4">$8.50</span>
+                        </div>
+
+                        <div class="flex justify-between items-end py-3 border-b border-gray-100">
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-gray-800">Cheesecake Nube</h3>
+                                <p class="text-sm text-gray-600">Queso crema, vainilla de Madagascar, base de galleta
+                                </p>
+                            </div>
+                            <span class="font-bold text-rose-600 ml-4">$9.80</span>
+                        </div>
+
+                        <div class="flex justify-between items-end py-3 border-b border-gray-100">
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-gray-800">Brownie Eclipse</h3>
+                                <p class="text-sm text-gray-600">Chocolate negro 70%, nueces tostadas, esencia de
+                                    vainilla</p>
+                            </div>
+                            <span class="font-bold text-rose-600 ml-4">$8.50</span>
+                        </div>
+
+                        <div class="flex justify-between items-end py-3 border-b border-gray-100">
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-gray-800">Cheesecake Nube</h3>
+                                <p class="text-sm text-gray-600">Queso crema, vainilla de Madagascar, base de galleta
+                                </p>
+                            </div>
+                            <span class="font-bold text-rose-600 ml-4">$9.80</span>
+                        </div>
+
+                        <div class="flex justify-between items-end py-3 border-b border-gray-100">
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-gray-800">Brownie Eclipse</h3>
+                                <p class="text-sm text-gray-600">Chocolate negro 70%, nueces tostadas, esencia de
+                                    vainilla</p>
+                            </div>
+                            <span class="font-bold text-rose-600 ml-4">$8.50</span>
+                        </div>
+
+                        <div class="flex justify-between items-end py-3 border-b border-gray-100">
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-gray-800">Cheesecake Nube</h3>
+                                <p class="text-sm text-gray-600">Queso crema, vainilla de Madagascar, base de galleta
+                                </p>
+                            </div>
+                            <span class="font-bold text-rose-600 ml-4">$9.80</span>
+                        </div>
+
+                        <div class="flex justify-between items-end py-3 border-b border-gray-100">
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-gray-800">Brownie Eclipse</h3>
+                                <p class="text-sm text-gray-600">Chocolate negro 70%, nueces tostadas, esencia de
+                                    vainilla</p>
+                            </div>
+                            <span class="font-bold text-rose-600 ml-4">$8.50</span>
+                        </div>
+
+                        <div class="flex justify-between items-end py-3 border-b border-gray-100">
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-gray-800">Cheesecake Nube</h3>
+                                <p class="text-sm text-gray-600">Queso crema, vainilla de Madagascar, base de galleta
+                                </p>
+                            </div>
+                            <span class="font-bold text-rose-600 ml-4">$9.80</span>
+                        </div>
+
+                        <div class="flex justify-between items-end py-3 border-b border-gray-100">
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-gray-800">Brownie Eclipse</h3>
+                                <p class="text-sm text-gray-600">Chocolate negro 70%, nueces tostadas, esencia de
+                                    vainilla</p>
+                            </div>
+                            <span class="font-bold text-rose-600 ml-4">$8.50</span>
+                        </div>
+
+                        <div class="flex justify-between items-end py-3 border-b border-gray-100">
+                            <div class="flex-1">
+                                <h3 class="font-semibold text-gray-800">Brownie Eclipse</h3>
+                                <p class="text-sm text-gray-600">Chocolate negro 70%, nueces tostadas, esencia de
+                                    vainilla</p>
+                            </div>
+                            <span class="font-bold text-rose-600 ml-4">$8.50</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Sección footer -->
+    <footer class="bg-[#cddcdb] text-gray-300 py-8 mt-12">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center md:justify-between gap-6">
+
+            <!-- Logo con imagen + nombre -->
+            <div
+                class="flex flex-col md:flex-row items-center justify-center md:justify-start gap-3 text-center md:text-left">
+                <!-- mt-8 para margen superior -->
+                <img src="/img/logoNav.png" alt="Logo Miausseleine" class="h-16">
+                <div class="flex flex-col items-center md:items-start">
+                    <h2 class="text-xl font-bold text-pink-500">Miausseleine</h2>
+                    <p class="text-sm text-[#4a4a4a]">&copy; 2025 Miausseleine. Todos los derechos reservados.</p>
+                </div>
+            </div>
+
+            <!-- Anclas footer -->
+            <ul class="flex flex-wrap justify-center gap-4 text-sm">
+                <li><a href="index.html" class="text-[#4a4a4a] hover:text-pink-400 transition ">Home</a></li>
+                <li><a href="about.html" class="text-[#4a4a4a] hover:text-pink-400 transition">Nosotros</a></li>
+                <li><a href="menu.html" class="text-[#4a4a4a] hover:text-pink-400 transition">Menú</a></li>
+                <li><a href="gallery.html" class="text-[#4a4a4a] hover:text-pink-400 transition">Galería</a></li>
+                <li><a href="contact.html" class="text-[#4a4a4a] hover:text-pink-400 transition">Contacto</a></li>
+            </ul>
+
+            <!-- Redes sociales -->
+            <div class="flex justify-center gap-4">
+                <a href="https://twitter.com" aria-label="Síguenos en Twitter" target="_blank"
+                    class="text-[#4a4a4a] hover:text-pink-400 transition">
+                    <!-- Ícono Twitter -->
+                    <svg aria-hidden="true" title="Twitter" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5"
+                        fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
+                </a>
+                <a href="https://instagram.com" aria-label="Síguenos en Instagram" target="_blank"
+                    class="text-[#4a4a4a] hover:text-pink-400 transition">
+                    <!-- Ícono Instagram -->
+                    <svg aria-hidden="true" title="Instagram" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5"
+                        fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M7.5 2h9A5.5 5.5 0 0122 7.5v9a5.5 5.5 0 01-5.5 5.5h-9A5.5 5.5 0 012 16.5v-9A5.5 5.5 0 017.5 2zm0 2A3.5 3.5 0 004 7.5v9A3.5 3.5 0 007.5 20h9a3.5 3.5 0 003.5-3.5v-9A3.5 3.5 0 0016.5 4h-9zM12 7a5 5 0 110 10 5 5 0 010-10zm0 2A3 3 0 1015 12a3 3 0 00-3-3zm5.75-2.75a1 1 0 110 2 1 1 0 010-2z" />
+                    </svg>
+                </a>
+                <a href="https://facebook.com" aria-label="Síguenos en Facebook" target="_blank"
+                    class="text-[#4a4a4a] hover:text-pink-400 transition">
+                    <!-- Ícono Facebook -->
+                    <svg aria-hidden="true" title="Facebook" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5"
+                        fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M22 12a10 10 0 10-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.6l-.4 3h-2.2v7A10 10 0 0022 12z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
