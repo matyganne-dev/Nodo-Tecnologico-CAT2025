@@ -67,19 +67,291 @@
         </nav>
     </header>
 
-    <main>
-        <section>
-            <h1>Galería de Postres</h1>
-            <p>Disfruta de nuestras creaciones visuales.</p>
-            <article>
-                <figure>
-                    <img src="ruta/a/imagen1.jpg" alt="Postre 1">
-                    <figcaption>Descripción del postre.</figcaption>
+    <section class="px-4 py-12 max-w-7xl mx-auto">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Nuestra Galería</h1>
+        <p class="text-gray-600 text-lg md:text-xl  leading-relaxed">
+            Descubre nuestras exquisitas creaciones artesanales. Cada postre es elaborado con ingredientes premium y
+            mucho amor para ofrecerte una experiencia única.
+        </p>
+        <div class="w-24 h-1 bg-pink-400 mx-auto mt-6 rounded"></div>
+    </section>
+
+    <main class="px-4 py-2 max-w-7xl mx-auto">
+
+        <section class="py-12 grid gap-3 md:gap-4 lg:gap-5">
+            <!-- Fila 1: 2 Imágenes al 50% cada una -->
+            <div class="grid grid-cols-2 gap-3 md:gap-4 lg:gap-5">
+                <figure
+                    class="group relative overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+                    <img src="img/cupcakes.avif" alt="Postre 1"
+                        class="w-full h-48 md:h-56 lg:h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+
+                    <!-- Overlay con información -->
+                    <div
+                        class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        <h3 class="text-white font-semibold text-sm md:text-lg mb-1">Cupcake Premium</h3>
+                        <p class="text-white/90 text-xs md:text-sm mb-2 md:mb-3">$450</p>
+                        <button
+                            class="bg-pink-500 hover:bg-pink-600 text-white px-2 md:px-4 py-1 md:py-2 rounded-lg text-xs md:text-sm font-medium transition-colors duration-200">
+                            Pedir Ahora
+                        </button>
+                    </div>
                 </figure>
-                <!-- Repite para más imágenes, usa <figure> para semántica -->
-            </article>
+
+                <figure
+                    class="group relative overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+                    <img src="img/Cheesecake.avif" alt="Postre Principal"
+                        class="w-full h-48 md:h-56 lg:h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+
+                    <div
+                        class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        <h3 class="text-white font-semibold text-sm md:text-lg mb-1">Cheesecake Especial</h3>
+                        <p class="text-white/90 text-xs md:text-sm mb-2 md:mb-3">$2.500</p>
+                        <button
+                            class="bg-pink-500 hover:bg-pink-600 text-white px-2 md:px-4 py-1 md:py-2 rounded-lg text-xs md:text-sm font-medium transition-colors duration-200">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </figure>
+            </div>
+
+            <!-- Fila 2: Layout existente con overlay -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-5">
+                <!-- Imagen 2 -->
+                <figure
+                    class="group h-40 relative col-span-1 md:col-span-1 lg:col-span-1 overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+                    <img src="img/Cheesecake.avif" alt="Postre 2"
+                        class="w-full h-40 md:h-56 lg:h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+
+                    <div
+                        class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        <h3 class="text-white font-semibold text-sm md:text-lg mb-1">Tarta de Frutas</h3>
+                        <p class="text-white/90 text-xs md:text-sm mb-2 md:mb-3">$1.800</p>
+                        <button
+                            class="bg-pink-500 hover:bg-pink-600 text-white px-2 md:px-4 py-1 md:py-2 rounded-lg text-xs md:text-sm font-medium transition-colors duration-200">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </figure>
+
+                <!-- Imagen 3 -->
+                <figure
+                    class="group h-40 relative col-span-1 md:col-span-1 lg:col-span-1 overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+                    <img src="img/cupcakes.avif" alt="Postre 3"
+                        class="w-full h-40 md:h-56 lg:h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+
+                    <div
+                        class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        <h3 class="text-white font-semibold text-sm md:text-lg mb-1">Cupcake Chocolate</h3>
+                        <p class="text-white/90 text-xs md:text-sm mb-2 md:mb-3">$520</p>
+                        <button
+                            class="bg-pink-500 hover:bg-pink-600 text-white px-2 md:px-4 py-1 md:py-2 rounded-lg text-xs md:text-sm font-medium transition-colors duration-200">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </figure>
+
+                <!-- Imagen 4 - tablet/desktop -->
+                <figure
+                    class="group relative hidden h-40 md:block md:col-span-1 lg:col-span-1 overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+                    <img src="img/cupcakes.avif" alt="Postre 4"
+                        class="w-full h-full lg:h-48 object-cover group-hover:scale-105 transition-transform duration-500">
+
+                    <div
+                        class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        <h3 class="text-white font-semibold text-lg mb-1">Muffin Arándanos</h3>
+                        <p class="text-white/90 text-sm mb-3">$380</p>
+                        <button
+                            class="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </figure>
+
+                <!-- Imagen 5 - desktop -->
+                <figure
+                    class="group relative hidden h-40 lg:block lg:col-span-1 overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+                    <img src="img/Cheesecake.avif" alt="Postre 5"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+
+                    <div
+                        class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        <h3 class="text-white font-semibold text-lg mb-1">Torta Red Velvet</h3>
+                        <p class="text-white/90 text-sm mb-3">$3.200</p>
+                        <button
+                            class="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </figure>
+            </div>
+
+            <!-- Imagen 4 en mobile -->
+            <figure
+                class="group relative md:hidden overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+                <img src="img/cupcakes.avif" alt="Postre 4"
+                    class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500">
+
+                <div
+                    class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                    <h3 class="text-white font-semibold text-lg mb-1">Muffin Arándanos</h3>
+                    <p class="text-white/90 text-sm mb-3">$380</p>
+                    <button
+                        class="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200">
+                        Pedir Ahora
+                    </button>
+                </div>
+            </figure>
+
+            <!-- Imagen 5 mobile/tablet -->
+            <figure
+                class="group relative lg:hidden overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+                <img src="img/Cheesecake.avif" alt="Postre 5"
+                    class="w-full h-48 md:h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+
+                <div
+                    class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                    <h3 class="text-white font-semibold text-lg mb-1">Torta Red Velvet</h3>
+                    <p class="text-white/90 text-sm mb-3">$3.200</p>
+                    <button
+                        class="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200">
+                        Pedir Ahora
+                    </button>
+                </div>
+            </figure>
+        </section>
+
+        <!-- Sección Tartas -->
+        <section class="mb-16">
+            <div class="mb-8">
+                <h2 class="text-3xl font-bold text-gray-800 mb-3">Tartas</h2>
+                <p class="text-gray-600 text-lg">Nuestras tartas artesanales son perfectas para celebraciones
+                    especiales. Elaboradas con ingredientes frescos y técnicas tradicionales.</p>
+            </div>
+
+            <div class="grid gap-4 md:gap-6 lg:gap-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                <!-- Producto 1 -->
+                <figure
+                    class="group relative overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+                    <img src="img/Cheesecake.avif" alt="Cheesecake de Frutos Rojos"
+                        class="w-full h-48 md:h-56 lg:h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+
+                    <!-- Overlay con información -->
+                    <div
+                        class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        <h3 class="text-white font-semibold text-lg mb-1">Cheesecake de Frutos Rojos</h3>
+                        <p class="text-white/90 text-sm mb-3">$2.500</p>
+                        <button
+                            class="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </figure>
+
+                <!-- Producto 2 -->
+                <figure
+                    class="group relative overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+                    <img src="img/Cheesecake.avif" alt="Tarta de Chocolate"
+                        class="w-full h-48 md:h-56 lg:h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+
+                    <div
+                        class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        <h3 class="text-white font-semibold text-lg mb-1">Tarta de Chocolate</h3>
+                        <p class="text-white/90 text-sm mb-3">$2.800</p>
+                        <button
+                            class="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Sección Cupcakes -->
+        <section class="mb-16">
+            <div class="mb-8">
+                <h2 class="text-3xl font-bold text-gray-800 mb-3">Cupcakes</h2>
+                <p class="text-gray-600 text-lg">Pequeñas delicias perfectas para cualquier ocasión. Variedad de sabores
+                    y decoraciones únicas.</p>
+            </div>
+
+            <div class="grid gap-4 md:gap-6 lg:gap-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                <!-- Producto 1 -->
+                <figure
+                    class="group relative overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+                    <img src="img/cupcakes.avif" alt="Cupcake de Vainilla"
+                        class="w-full h-48 md:h-56 lg:h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+
+                    <div
+                        class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        <h3 class="text-white font-semibold text-lg mb-1">Cupcake de Vainilla</h3>
+                        <p class="text-white/90 text-sm mb-3">$450</p>
+                        <button
+                            class="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </figure>
+            </div>
         </section>
     </main>
+
+    <!-- Sección footer -->
+    <footer class="bg-[#cddcdb] text-gray-300 py-8 mt-12">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center md:justify-between gap-6">
+
+            <!-- Logo con imagen + nombre -->
+            <div
+                class="flex flex-col md:flex-row items-center justify-center md:justify-start gap-3 text-center md:text-left">
+                <!-- mt-8 para margen superior -->
+                <img src="/img/logoNav.png" alt="Logo Miausseleine" class="h-16">
+                <div class="flex flex-col items-center md:items-start">
+                    <h2 class="text-xl font-bold text-pink-500">Miausseleine</h2>
+                    <p class="text-sm text-[#4a4a4a]">&copy; 2025 Miausseleine. Todos los derechos reservados.</p>
+                </div>
+            </div>
+
+            <!-- Anclas footer -->
+            <ul class="flex flex-wrap justify-center gap-4 text-sm">
+                <li><a href="index.html" class="text-[#4a4a4a] hover:text-pink-400 transition ">Home</a></li>
+                <li><a href="about.html" class="text-[#4a4a4a] hover:text-pink-400 transition">Nosotros</a></li>
+                <li><a href="menu.html" class="text-[#4a4a4a] hover:text-pink-400 transition">Menú</a></li>
+                <li><a href="gallery.html" class="text-[#4a4a4a] hover:text-pink-400 transition">Galería</a></li>
+                <li><a href="contact.html" class="text-[#4a4a4a] hover:text-pink-400 transition">Contacto</a></li>
+            </ul>
+
+            <!-- Redes sociales -->
+            <div class="flex justify-center gap-4">
+                <a href="https://twitter.com" aria-label="Síguenos en Twitter" target="_blank"
+                    class="text-[#4a4a4a] hover:text-pink-400 transition">
+                    <!-- Ícono Twitter -->
+                    <svg aria-hidden="true" title="Twitter" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5"
+                        fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
+                </a>
+                <a href="https://instagram.com" aria-label="Síguenos en Instagram" target="_blank"
+                    class="text-[#4a4a4a] hover:text-pink-400 transition">
+                    <!-- Ícono Instagram -->
+                    <svg aria-hidden="true" title="Instagram" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5"
+                        fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M7.5 2h9A5.5 5.5 0 0122 7.5v9a5.5 5.5 0 01-5.5 5.5h-9A5.5 5.5 0 012 16.5v-9A5.5 5.5 0 017.5 2zm0 2A3.5 3.5 0 004 7.5v9A3.5 3.5 0 007.5 20h9a3.5 3.5 0 003.5-3.5v-9A3.5 3.5 0 0016.5 4h-9zM12 7a5 5 0 110 10 5 5 0 010-10zm0 2A3 3 0 1015 12a3 3 0 00-3-3zm5.75-2.75a1 1 0 110 2 1 1 0 010-2z" />
+                    </svg>
+                </a>
+                <a href="https://facebook.com" aria-label="Síguenos en Facebook" target="_blank"
+                    class="text-[#4a4a4a] hover:text-pink-400 transition">
+                    <!-- Ícono Facebook -->
+                    <svg aria-hidden="true" title="Facebook" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5"
+                        fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M22 12a10 10 0 10-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.6l-.4 3h-2.2v7A10 10 0 0022 12z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
 
     <!--funcion hamburguesa-->
     <script>
