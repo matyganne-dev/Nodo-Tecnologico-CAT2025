@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galería de fotos de nuestros postres elegantes en Miausseleine.">
+    <meta name="keywords" content="galería, fotos, postres, imágenes">
+    <meta name="author" content="Ganne Moreno Pablo Matias">
+    <title>Miausseleine - Galería</title>
+    <link rel="icon" href="/img/favicon.svg" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #menu-btn.open span:nth-child(1) {
+            transform: rotate(45deg) translateY(6px) translateX(8px);
+            width: 1.8rem;
+        }
+
+        #menu-btn.open span:nth-child(2) {
+            opacity: 0;
+        }
+
+        #menu-btn.open span:nth-child(3) {
+            transform: rotate(-45deg) translateY(-6px) translateX(8px);
+            width: 1.8rem;
+        }
+    </style>
+</head>
+
+<body class="pt-16">
+    <!-- Sección Header/nav -->
+    <header class="fixed top-0 left-0 w-full z-50 shadow-lg bg-gray-50">
+        <nav class="px-4 py-4 sm:flex sm:items-center sm:justify-between">
+            <!-- seccion logo y botton mobile -->
+            <div class="flex items-center justify-between">
+                <!-- Logo con enlace y texto -->
+                <a href="index.html" class="flex items-center space-x-2">
+                    <img src="/img/logoNav.png" class="h-12" alt="Logo de Miausseleine - Postres con estilo gatuno" />
+                    <span class="text-xl font-bold text-gray-800">Miausseleine</span>
+                </a>
+                <!-- boton hamburguesa -->
+                <button id="menu-btn" class="sm:hidden flex flex-col justify-between w-[1.8rem] h-6 focus:outline-none">
+                    <span class="block h-1 bg-gray-700 rounded transition-all duration-300"></span>
+                    <span class="block h-1 bg-gray-700 rounded transition-all duration-300"></span>
+                    <span class="block h-1 bg-gray-700 rounded transition-all duration-300"></span>
+                </button>
+            </div>
+
+            <!-- seccion links del navbar-->
+            <ul class="hidden flex-col items-start mt-3 gap-2 sm:flex sm:flex-row sm:mt-0 sm:gap-4" id="mobile-menu">
+                <li class="w-full sm:w-auto"><a
+                        class="block text-gray-600 hover:bg-gray-200 px-2 py-1 rounded hover:text-gray-900"
+                        href="index.html">Home</a></li>
+                <li class="w-full sm:w-auto"><a
+                        class="block text-gray-600 hover:bg-gray-200 px-2 py-1 rounded hover:text-gray-900 whitespace-nowrap"
+                        href="about.html">Nosotros</a></li>
+                <li class="w-full sm:w-auto"><a
+                        class="block text-gray-600 hover:bg-gray-200 px-2 py-1 rounded hover:text-gray-900"
+                        href="menu.html">Menú</a></li>
+                <li class="w-full sm:w-auto"><a
+                        class="block text-gray-600 hover:bg-gray-200 px-2 py-1 rounded hover:text-gray-900"
+                        href="gallery.html">Galería</a></li>
+                <li class="w-full sm:w-auto"><a
+                        class="block text-gray-600 hover:bg-gray-200 px-2 py-1 rounded hover:text-gray-900"
+                        href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Galería de Postres</h1>
+            <p>Disfruta de nuestras creaciones visuales.</p>
+            <article>
+                <figure>
+                    <img src="ruta/a/imagen1.jpg" alt="Postre 1">
+                    <figcaption>Descripción del postre.</figcaption>
+                </figure>
+                <!-- Repite para más imágenes, usa <figure> para semántica -->
+            </article>
+        </section>
+    </main>
+
+    <!--funcion hamburguesa-->
+    <script>
+        const btn = document.getElementById("menu-btn");
+        const menu = document.getElementById("mobile-menu");
+
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden"); // alterna ocultar/mostrar
+            btn.classList.toggle("open");    // alterna para rotar botón
+        });
+    </script>
+</body>
+
+</html>
